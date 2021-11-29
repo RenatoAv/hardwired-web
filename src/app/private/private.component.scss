@@ -1,0 +1,17 @@
+.navbar-brand {
+    padding: 0 15px 0 15px;
+    background-color: #06367c;
+}
+
+nav {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.usuario-logado {
+    position: absolute;
+    right: 25px;
+    color: #fff;
+    cursor: pointer;
+}

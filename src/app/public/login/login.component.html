@@ -1,0 +1,14 @@
+<div class="center">
+  <h2>Entrar</h2>
+  <form>
+      <div class="form-group">
+        <label for="login">Login:</label>
+        <input [(ngModel)]="login.username" name="login-name" type="email" class="form-control" id="login" aria-describedby="emailHelp">
+      </div>
+      <div class="form-group">
+        <label for="password">Senha:</label>
+        <input [(ngModel)]="login.password" name="password-name" type="password" class="form-control" id="password">
+      </div>
+      <button (click)="logar()" type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

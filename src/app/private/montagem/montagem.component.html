@@ -1,0 +1,42 @@
+<div class="main">
+    <h1>Montagens</h1>
+    <hr>
+    <button routerLink="../cadastrar-montagem" type="submit" class="btn btn-success">Adicionar</button>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Qntd. Componentes</th>
+            <th scope="col">Valor total</th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr *ngFor="let mont of dados.content">
+            <td>{{mont.nome}}</td>
+            <td>{{mont.totalComponentes}}</td>
+            <td>R$ {{mont.valorTotal}}</td>
+            <td class="actions"><button (click)="remover(mont.id)" type="submit" class="btn btn-danger">Remover</button></td>
+        </tr>
+        <!-- <tr>
+            <td>Servidor de aplição</td>
+            <td>13</td>
+            <td>R$ 8,000</td>
+            <td class="actions"><button (click)="adicionar()" type="submit" class="btn btn-danger">Remover</button></td>
+        </tr>
+        <tr>
+            <td>Servidor de banco de dados</td>
+            <td>10</td>
+            <td>R$ 5,500</td>
+            <td class="actions"><button (click)="adicionar()" type="submit" class="btn btn-danger">Remover</button></td>
+        </tr>
+        <tr>
+            <td>Servidor de Armazenamento</td>
+            <td>5</td>
+            <td>R$ 3,500</td>
+            <td class="actions"><button (click)="adicionar()" type="submit" class="btn btn-danger">Remover</button></td>
+        </tr> -->
+        </tbody>
+    </table>
+</div>
