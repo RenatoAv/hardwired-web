@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MontagemRoutingModule } from './montagem-routing.module';
 import { MontagemComponent } from './montagem.component';
+import { PaginacaoModule } from 'src/app/shared/paginacao/paginacao.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { MontagemComponent } from './montagem.component';
   ],
   imports: [
     CommonModule,
-    MontagemRoutingModule
+    MontagemRoutingModule,
+    PaginacaoModule
   ]
 })
 export class MontagemModule { }

@@ -9,7 +9,7 @@ import { AuthGuard } from './auth/auth.guard';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

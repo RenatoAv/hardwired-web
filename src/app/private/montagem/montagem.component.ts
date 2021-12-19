@@ -18,6 +18,7 @@ export class MontagemComponent implements OnInit {
   }
   
   listar(page = 0) {
+    console.log('pagina', page);
     this.montagemService.listar(page).subscribe((success) => {
       console.log(success);
       this.dados = success;
